@@ -1,29 +1,17 @@
----
-title: "Lunar Documentation"
-description: "Learn to create your next online store in Laravel with Lunar E-Commerce."
+# Introduction
 
-# https://vitepress.dev/reference/default-theme-home-page
-layout: home
+Lunar's admin panel is powered by Filament v3. It allows you to easily extend the admin panel to suit your project.
 
-hero:
-  name: "Documentation"
-  text: "Lunar Headless E‑Commerce"
-  tagline: Explore our guides and examples to integrate Lunar into your Laravel application.
-  actions:
-    - theme: brand
-      text: Get Started
-      link: /core/overview
-    - theme: alt
-      text: Join us on Discord
-      link: https://discord.gg/v6qVWaf
+With the panel you can administer your products, collections, orders, customers, discounts, settings and much more.
 
-features:
-  - title: E-Commerce Core
-    details: Based around Eloquent models, quickly build your online store in any Laravel stack.
-    link: /core/overview
-  - title: Admin Panel
-    details: Filament-powered admin panel to administer your product catalog, customers, orders and much more.
-    link: #
-  - title: API - Coming Soon
-    details: Connect to your store via a JSON:API, ideal for PWA storefronts and mobile apps.
----
+## Work In Progress (WIP)
+
+This package is very much in-development. It is incomplete and not production ready. 
+
+## Contributing
+
+If you wish to contribute to the project, please review the project at https://github.com/orgs/lunarphp/projects/3
+
+You can request to contribute on an issue in the backlog, or you can propose a new issue.
+
+Please do NOT submit a Pull Request without being assigned to an issue first.

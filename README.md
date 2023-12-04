@@ -1,42 +1,21 @@
-<p align="center"><a href="https://lunarphp.io/" target="_blank"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/lunarphp/art/main/lunar-logo-dark.svg"><img alt="Lunar" width="200" src="https://raw.githubusercontent.com/lunarphp/art/main/lunar-logo.svg"></picture></a></p>
+# Lunar Admin Panel
 
-[Lunar](https://lunarphp.io) is a set of Laravel packages that bring functionality akin to Shopify and other e-commerce platforms to Laravel. You have complete freedom to create your own storefront(s), but we've already done the hard work for you in the backend.
+See the docs at https://lunar-panel.vercel.app/
 
-This repository serves as a monorepo for the main packages that make up Lunar.
+## TODO
 
-## Requirements
-
-- PHP ^8.1
-- Laravel 9+
-- MySQL 8.0+ / PostgreSQL 9.2+
-
-## Documentation
-
-- [Full documentation](https://docs.lunarphp.io/) - Includes in-depth guides on everything Lunar
-
-## Contribution
-
-- Bug reports should be submitted as a new Github issue
-- Enhancements should [be in discussions](https://github.com/lunarphp/lunar/discussions/new?category=enhancements)
-- Feature requests should [be in discussions](https://github.com/lunarphp/lunar/discussions/new?category=feature-requests)
-
-## Community
-
-- [Join our discord server](https://discord.gg/v6qVWaf) and chat to the developers and people using Lunar.
-- [We have a roadmap](https://github.com/orgs/lunarphp/projects/1) where we will be detailing which features are next.
-
-## Packages in this monorepo
-
-### Admin panel
-
-The admin panel is provided to enable you to manage your store via a modern interface. You can manage all aspects of your store including products, orders, staff members etc. It's built using Filament and can be extended to meet each of your stores requirements.
-
-### Core
-
-The core Lunar package, this provides all the things needed for your store to function. This is where all the models, actions and utilities live and is required by the admin hub.
-
----
-
-## License
-
-Lunar is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+- [ ] How to set the Lunar logo?
+- [ ] How will addons add buttons etc to existing screens?
+- [ ] Field types
+- [ ] Model Policies
+- [ ] Some JSON fields (e.g. ProductOption) are cast to Collections, not an ArrayObject
+- [ ] Add Spatie ActivityLog to more (all?) models
+- [ ] Tax Zone types are "country", "states", "postcodes" -> would prefer it to be "countries" so it's consistent
+- [ ] `ListField` FieldType shouldn't really have "Field" in its name -> change to simply "List"
+- [ ] Sometimes we use "Enabled" other times "Active". Do we want to consider consistency here also?
+- [ ] Staff "firstname" "lastname" I think should have underscores, e.g. "first_name"
+- [x] How to allow devs to extend Lunar's forms and tables
+- [x] How to allow devs to overide validation rules
+- [x] Allow devs to extend by adding their own pages/resources
+- [ ] Tests!!
+- [ ] Mention influence from https://filamentphp.com/plugins/spatie-activity-log
