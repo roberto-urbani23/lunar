@@ -17,6 +17,7 @@ class ManageProductAvailability extends ManageRelatedRecords
 
     public function getTitle(): string
     {
+
         return __('lunarpanel::product.pages.availability.label');
     }
 
