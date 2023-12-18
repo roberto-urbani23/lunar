@@ -6,7 +6,7 @@ use Filament\Resources\Pages\ManageRelatedRecords;
 use Filament\Resources\RelationManagers\RelationGroup;
 use Filament\Support\Facades\FilamentIcon;
 use Lunar\Admin\Filament\Resources\ProductResource;
-use Lunar\Admin\Filament\Resources\ProductResource\RelationManagers\MediaRelationManager;
+use Lunar\Admin\Support\RelationManagers\MediaRelationManager;
 
 class ManageProductMedia extends ManageRelatedRecords
 {
