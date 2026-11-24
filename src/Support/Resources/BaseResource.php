@@ -4,6 +4,7 @@ namespace Lunar\Admin\Support\Resources;
 
 use Filament\Facades\Filament;
 use Filament\Resources\Resource;
+use Illuminate\Auth\Access\Response;
 use Illuminate\Database\Connection;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
@@ -45,6 +46,11 @@ class BaseResource extends Resource
     public static function can(string|\UnitEnum $action, ?Model $record = null): bool
     {
         return static::hasPermission();
+    }
+
+    public static function getAuthorizationResponse(string|\UnitEnum $action, ?Model $record = null): Response
+    {
+        return static::hasPermission() ? Response::allow() : Response::deny();
     }
 
     protected static function hasPermission(): bool
